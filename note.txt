@@ -4,7 +4,7 @@ Project được tổ chức theo mô hình mvc.
 
 tùy chỉnh kết nối csdl tại file connection.php
 
-Đường dẫn: http://localhost/kitton/index.php sẽ truy cập vào trang chủ.
+Đường dẫn: http://localhost/kitton/index.php hoặc http://localhost/kitton/index.php?controller=pages&action=home sẽ truy cập vào trang chủ.
 
 Đường dẫn: http://localhost/kitton/index.php?controller=users sẽ truy cập vào trang index của mục users, nếu chưa đăng nhập sẽ dẫn tới trang login.
 
@@ -15,4 +15,7 @@ tùy chỉnh kết nối csdl tại file connection.php
 Sau khi đăng nhập phiên làm việc của người dùng sẽ được lưu.
 
 Tại trang index ấn logout để thoát và đồng thời hủy phiên làm việc (cần đăng nhập lại để vào lại trang index).
+
+Nếu truy cập và các đường dẫn không tồn tại sẽ dẫn đến trang báo lỗi. 
+Đường dẫn trang báo lỗi: http://localhost/kitton/index.php?controller=pages&action=error.
 
