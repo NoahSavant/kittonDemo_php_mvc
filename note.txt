@@ -19,3 +19,13 @@ Tại trang index ấn logout để thoát và đồng thời hủy phiên làm 
 Nếu truy cập và các đường dẫn không tồn tại sẽ dẫn đến trang báo lỗi. 
 Đường dẫn trang báo lỗi: http://localhost/kitton/index.php?controller=pages&action=error.
 
+File csdl:
+create database mevivu;
+use mevivu;
+
+CREATE TABLE Users(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	username varchar(50) unique,
+    password varchar(50),
+    email nvarchar(100)
+) ENGINE=InnoDB
